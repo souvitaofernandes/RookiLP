@@ -40,7 +40,7 @@ export function Footer() {
           <p className="font-body text-[13px] text-rooki-text-muted">© 2026 Rooki. Todos os direitos reservados.</p>
           <div className="flex items-center gap-2">
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/rooki-br/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn da Rooki"
@@ -49,7 +49,7 @@ export function Footer() {
               <Linkedin size={16} strokeWidth={1.75} />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/rooki_br/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram da Rooki"
