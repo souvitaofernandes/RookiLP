@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Sora, Montserrat } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { CookieConsent } from "@/components/rooki/cookie-consent"
 import "./globals.css"
 
 const sora = Sora({
@@ -21,7 +22,6 @@ export const metadata: Metadata = {
   title: "Rooki | Copiloto de segurança digital contra golpes",
   description:
     "A Rooki ajuda usuários a analisarem mensagens, links e golpes pelo WhatsApp antes de clicar, pagar ou responder. Uma camada de confiança digital para empresas B2B2C.",
-  generator: "v0.app",
   icons: {
     icon: [
       { url: "/icon-light-32x32.png", media: "(prefers-color-scheme: light)" },
@@ -46,6 +46,7 @@ export default function RootLayout({
       <body className="font-body text-rooki-text antialiased">
         {children}
         {process.env.NODE_ENV === "production" && <Analytics />}
+        <CookieConsent />
       </body>
     </html>
   )
