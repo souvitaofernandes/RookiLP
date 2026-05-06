@@ -14,7 +14,8 @@ const PUB = path.resolve(__dirname, "../public")
  */
 const TARGETS = [
   // Portrait orientation, head in upper-center, doorframe on the left, plain wall behind.
-  { name: "victor", src: "founder-victor-src.jpg", cx: 0.54, cy: 0.31, cropFrac: 0.62 },
+  // cx 0.50 centers horizontally, cy 0.36 pushes the face slightly above the avatar center.
+  { name: "victor", src: "founder-victor-src.jpg", cx: 0.5, cy: 0.36, cropFrac: 0.62 },
   // ~Square selfie, head upper-center, busy city background — tighten to face/shoulders only.
   { name: "larissa", src: "founder-larissa-src.jpg", cx: 0.42, cy: 0.43, cropFrac: 0.58 },
   // Studio headshot. Tighten so face scale matches the other two avatars.
